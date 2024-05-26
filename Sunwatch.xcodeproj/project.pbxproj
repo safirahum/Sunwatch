@@ -7,11 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D637CCD32BFAF11700843BD6 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D637CCD22BFAF11700843BD6 /* WeatherManager.swift */; };
 		D6D594652BF37C6A001C8781 /* Sunwatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = D6D594642BF37C6A001C8781 /* Sunwatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D6D5946A2BF37C6A001C8781 /* SunwatchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D594692BF37C6A001C8781 /* SunwatchApp.swift */; };
 		D6D5946C2BF37C6A001C8781 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5946B2BF37C6A001C8781 /* ContentView.swift */; };
 		D6D5946E2BF37C6B001C8781 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D5946D2BF37C6B001C8781 /* Assets.xcassets */; };
 		D6D594712BF37C6B001C8781 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6D594702BF37C6B001C8781 /* Preview Assets.xcassets */; };
+		D6D5947C2BF37CB8001C8781 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6D5947B2BF37CB8001C8781 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,12 +41,16 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		D637CCD22BFAF11700843BD6 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
 		D6D5945E2BF37C6A001C8781 /* Sunwatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sunwatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D594642BF37C6A001C8781 /* Sunwatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Sunwatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6D594692BF37C6A001C8781 /* SunwatchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunwatchApp.swift; sourceTree = "<group>"; };
 		D6D5946B2BF37C6A001C8781 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		D6D5946D2BF37C6B001C8781 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6D594702BF37C6B001C8781 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D6D5947B2BF37CB8001C8781 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		D6D5947D2BF37F5D001C8781 /* Sunwatch Watch App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Sunwatch Watch App.entitlements"; sourceTree = "<group>"; };
+		D6D5947E2BF37F9B001C8781 /* Sunwatch-Watch-App-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Sunwatch-Watch-App-Info.plist"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +84,12 @@
 		D6D594682BF37C6A001C8781 /* Sunwatch Watch App */ = {
 			isa = PBXGroup;
 			children = (
+				D6D5947E2BF37F9B001C8781 /* Sunwatch-Watch-App-Info.plist */,
+				D6D5947D2BF37F5D001C8781 /* Sunwatch Watch App.entitlements */,
 				D6D594692BF37C6A001C8781 /* SunwatchApp.swift */,
 				D6D5946B2BF37C6A001C8781 /* ContentView.swift */,
+				D6D5947B2BF37CB8001C8781 /* LocationManager.swift */,
+				D637CCD22BFAF11700843BD6 /* WeatherManager.swift */,
 				D6D5946D2BF37C6B001C8781 /* Assets.xcassets */,
 				D6D5946F2BF37C6B001C8781 /* Preview Content */,
 			);
@@ -139,7 +149,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1530;
-				LastUpgradeCheck = 1530;
+				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					D6D5945D2BF37C6A001C8781 = {
 						CreatedOnToolsVersion = 15.3;
@@ -194,6 +204,8 @@
 			files = (
 				D6D5946C2BF37C6A001C8781 /* ContentView.swift in Sources */,
 				D6D5946A2BF37C6A001C8781 /* SunwatchApp.swift in Sources */,
+				D637CCD32BFAF11700843BD6 /* WeatherManager.swift in Sources */,
+				D6D5947C2BF37CB8001C8781 /* LocationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +254,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -303,6 +316,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -327,13 +341,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sunwatch Watch App/Sunwatch Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sunwatch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 866Y8M45D6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sunwatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Sunwatch;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires access to Health data to read your UV exposure information.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires access to Health data to track UV exposure and provide sunscreen reminders.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to fetch UV index data.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -341,8 +361,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Sunwatch.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safirahum.Sunwatch1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -357,13 +378,19 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Sunwatch Watch App/Sunwatch Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Sunwatch Watch App/Preview Content\"";
 				DEVELOPMENT_TEAM = 866Y8M45D6;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Sunwatch-Watch-App-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = Sunwatch;
+				INFOPLIST_KEY_NSHealthShareUsageDescription = "This app requires access to Health data to read your UV exposure information.";
+				INFOPLIST_KEY_NSHealthUpdateUsageDescription = "This app requires access to Health data to track UV exposure and provide sunscreen reminders.";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "We need your location to fetch UV index data.";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				INFOPLIST_KEY_WKWatchOnly = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -371,8 +398,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Sunwatch.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safirahum.Sunwatch1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -392,7 +420,7 @@
 				DEVELOPMENT_TEAM = 866Y8M45D6;
 				INFOPLIST_KEY_CFBundleDisplayName = Sunwatch;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Sunwatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safirahum.Sunwatch1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
@@ -408,7 +436,7 @@
 				DEVELOPMENT_TEAM = 866Y8M45D6;
 				INFOPLIST_KEY_CFBundleDisplayName = Sunwatch;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.example.Sunwatch;
+				PRODUCT_BUNDLE_IDENTIFIER = com.safirahum.Sunwatch1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;

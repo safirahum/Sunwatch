@@ -8,10 +8,11 @@
 import SwiftUI
 
 @main
-struct Sunwatch_Watch_AppApp: App {
+struct SunWatchApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
         }
     }
 }
+
